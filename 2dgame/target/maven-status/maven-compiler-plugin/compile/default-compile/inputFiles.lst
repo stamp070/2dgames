@@ -1,10 +1,12 @@
-D:\coding\project OOP\2dgame\src\main\java\entity\spawnX.java
+D:\coding\project OOP\2dgame\src\main\java\tile\Grave.java
 D:\coding\project OOP\2dgame\src\main\java\tile\MapManager.java
 D:\coding\project OOP\2dgame\src\main\java\main\Main.java
 D:\coding\project OOP\2dgame\src\main\java\entity\Entity.java
 D:\coding\project OOP\2dgame\src\main\java\entity\Player.java
+D:\coding\project OOP\2dgame\src\main\java\entity\Square.java
 D:\coding\project OOP\2dgame\src\main\java\entity\Bullet.java
 D:\coding\project OOP\2dgame\src\main\java\entity\Ghost.java
 D:\coding\project OOP\2dgame\src\main\java\main\KeyHandler.java
 D:\coding\project OOP\2dgame\src\main\java\tile\TileManager.java
 D:\coding\project OOP\2dgame\src\main\java\main\GamePanel.java
+D:\coding\project OOP\2dgame\src\main\java\object\OBJ_heart.java

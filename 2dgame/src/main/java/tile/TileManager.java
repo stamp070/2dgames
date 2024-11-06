@@ -51,6 +51,7 @@ public class TileManager {
         TileOffset_Top = size[3];
         TileOffset_Right = size[4];
         TileOffset_Bottom = size[5];
+        System.out.println(FileName);
 
         BufferedImage imgTemp = null;
         try{

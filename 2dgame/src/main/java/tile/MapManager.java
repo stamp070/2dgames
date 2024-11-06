@@ -20,7 +20,7 @@ public class MapManager {
     int[] TileSize = {32, 32, 0, 0, 0, 0};
     public ArrayList<Grave> graves = new ArrayList<>();
     
-    String AssetPath = "/res/tileset/mapjaaaaa.png";
+    String AssetPath = "/res/tileset/tile.png";
     String[] Maps = {
         "/map1/",
         "/map2/",

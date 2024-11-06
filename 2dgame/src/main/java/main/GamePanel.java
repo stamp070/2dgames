@@ -42,11 +42,11 @@ public class GamePanel extends JPanel implements Runnable{
     public final int gameoverState = 3;
     
     
+    OBJ_heart heart = new OBJ_heart(this);
     MapManager map = new MapManager(this,0);
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
     Player player = new Player(this,keyH,map);
-    OBJ_heart heart = new OBJ_heart(this);
 
     ArrayList<Bullet> bullets = new ArrayList<>();
     ArrayList<Ghost> ghosts = new ArrayList<>();
@@ -274,8 +274,8 @@ public class GamePanel extends JPanel implements Runnable{
         BufferedImage bg = null;
         BufferedImage playerimg = null;
         try {
-            bg = ImageIO.read(getClass().getResource("/res/bg/bg.png"));
-            playerimg = ImageIO.read(getClass().getResource("/res/player/cowboy_attack_down_spritesheet.png"));
+            bg = ImageIO.read(getClass().getResourceAsStream("/res/bg/bg.png"));
+            playerimg = ImageIO.read(getClass().getResourceAsStream("/res/player/cowboy_attack_down_spritesheet.png"));
         } catch (Exception e) {
             System.err.println("Error loading title screen or player image: " + e.getMessage());
         }
@@ -312,7 +312,7 @@ public class GamePanel extends JPanel implements Runnable{
     public void drawChooseMapScreen(Graphics2D g2){
         BufferedImage bg = null;
         try {
-            bg = ImageIO.read(getClass().getResource("/res/bg/bg.png"));
+            bg = ImageIO.read(getClass().getResourceAsStream("/res/bg/bg.png"));
         } catch (Exception e) {
             System.err.println("Error loading title screen or player image: " + e.getMessage());
         }
@@ -406,7 +406,7 @@ public class GamePanel extends JPanel implements Runnable{
         }
         BufferedImage bg = null;
         try {
-            bg = ImageIO.read(getClass().getResource("/res/bg/bg.png"));
+            bg = ImageIO.read(getClass().getResourceAsStream("/res/bg/bg.png"));
 
         } catch (Exception e) {
             System.err.println("Error loading title screen or player image: " + e.getMessage());
