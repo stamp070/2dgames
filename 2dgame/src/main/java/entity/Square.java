@@ -28,10 +28,9 @@ public class Square {
         return bounds.intersects(other.getBounds());
     }
     public void drawRectangle(Graphics2D g2,int width, int height) {
-        // ตั้งค่าสี
         g2.setColor(Color.BLACK);
     
-        // วาดเฉพาะกรอบของสี่เหลี่ยม
+        // วาดกรอบสี่เหลี่ยม
         // g2.drawRect(this.x, this.y, width, height);
     }
 }

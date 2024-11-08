@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
 import main.GamePanel;
-public class Bullet extends Entity{
+public class Bullet extends Entity {
     GamePanel gp;
     int bulletX;
     int bulletY;

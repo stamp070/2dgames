@@ -18,7 +18,6 @@ import tile.MapManager;
 
 
 public class GamePanel extends JPanel implements Runnable{
-    // screen settings
     final int originalTileSize = 16;
     final int scale = 2;
     
@@ -28,19 +27,16 @@ public class GamePanel extends JPanel implements Runnable{
     public final int screenWidth = tileSize * maxScreenCol;
     public final int screenHeight = tileSize * maxScreenRow;
     
-    // Ingame status
     int wavemonster = 1;
     int survive_time = 0;
-    //FPS
+
     int FPS = 60;
 
-    //GAME STATE
     public int gameState = 0;
     public final int titleState = 0;
     public final int choosemapState = 1;
     public final int playState = 2;
     public final int gameoverState = 3;
-    
     
     OBJ_heart heart = new OBJ_heart(this);
     MapManager map = new MapManager(this,0);
@@ -59,7 +55,6 @@ public class GamePanel extends JPanel implements Runnable{
     JButton map3Button;
     
     public GamePanel(){
-        
         this.setPreferredSize(new Dimension(screenWidth,screenHeight));
         this.setBackground(Color.black);
         this.setDoubleBuffered(true);
@@ -433,6 +428,7 @@ public class GamePanel extends JPanel implements Runnable{
                     revalidate();
                     repaint();
                     requestFocusInWindow();
+                    
                 }
                 
             });

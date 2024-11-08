@@ -17,7 +17,7 @@ import tile.Grave;
 import tile.MapManager;
 
 public class Player extends Entity implements MouseMotionListener,MouseListener {
-    public GamePanel gp;
+    GamePanel gp;
     KeyHandler keyH;
     MapManager map;
     Square hitbox;
@@ -45,8 +45,6 @@ public class Player extends Entity implements MouseMotionListener,MouseListener 
         img = down;
 
         this.hitbox = new Square(x+ pixelMC , y +pixelMC , width, width);
-
-        g = (ArrayList)map.graves.clone();
     }
     
     public void setDefaultValues(){
@@ -94,10 +92,10 @@ public class Player extends Entity implements MouseMotionListener,MouseListener 
             int graveX = grave.getX();
             int graveY = grave.getY();
             Square graveHitbox = grave.getHitbox();  
-            Square nextHitbox = this.getHitbox();
+            Square playerHitbox = this.getHitbox();
             
     
-            if (nextHitbox.intersects(graveHitbox)) {
+            if (playerHitbox.intersects(graveHitbox)) {
                 // System.out.println("Collision detected with grave!");
                 double angle = Math.atan2(graveY - playerY - 32, graveX - playerX - 32);
                 

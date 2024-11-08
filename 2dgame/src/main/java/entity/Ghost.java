@@ -27,7 +27,7 @@ public class Ghost extends Entity implements Runnable {
 
     public Ghost(GamePanel gp, Player player) {
         this.gp = gp;
-        this.player = player; // เชื่อมโยงกับวัตถุ Player
+        this.player = player; 
         spawnLocations = new int[][] {
             {100, 100},
             {gp.screenWidth - 200, 100},
@@ -42,8 +42,8 @@ public class Ghost extends Entity implements Runnable {
         setDefaultValues();
         
         try {
-            img = ImageIO.read(getClass().getResourceAsStream("/res/ghost/ghost-Sheet.png")); // Load the ghost sprite sheet
-            loadAnimations(); // Load animation frames
+            img = ImageIO.read(getClass().getResourceAsStream("/res/ghost/ghost-Sheet.png")); 
+            loadAnimations(); 
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -100,6 +100,7 @@ public class Ghost extends Entity implements Runnable {
             }
         }
     }
+
 
     public void moveTowardsPlayer() {
         // ทำให้ผีเดินเข้าหาผู้เล่น

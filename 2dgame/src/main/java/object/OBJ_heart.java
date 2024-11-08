@@ -8,10 +8,11 @@ import javax.imageio.ImageIO;
 import main.GamePanel;
 
 public class OBJ_heart{
-    public BufferedImage heart_full, heart_blank;
+    public BufferedImage heart_full=null, heart_blank=null;
     GamePanel gp;
     public OBJ_heart(GamePanel gp){
         this.gp = gp;
+        
         try {
             heart_full = ImageIO.read(getClass().getResourceAsStream("/res/heart/heart_full.png"));
             heart_blank = ImageIO.read(getClass().getResourceAsStream("/res/heart/heart_blank.png"));
